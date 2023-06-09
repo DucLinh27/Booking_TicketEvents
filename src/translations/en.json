@@ -36,5 +36,20 @@
             "manage-specialty": "Manage Specialty",
             "manage-handbook": "Manage Handbook"
         }
+    },
+    "manage-user": {
+        "add": "Add a new user",
+        "email":"Email",
+        "password": "Password",
+        "firstname":"Firstname",
+        "lastname":"Lastname",
+        "gender":"Gender",
+        "phone-number": "Phone Number",
+        "position": "Position",
+        "roleId": "RoleId",
+        "address": "Address",
+        "image": "Avatar",
+        "save": "Save user"
     }
+    
 }

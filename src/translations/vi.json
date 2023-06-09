@@ -34,6 +34,20 @@
             "manage-specialty": "Chuyên khoa",
             "handbook": "Cẩm nang"
         }
+    },
+    "manage-user": {
+        "add": "Thêm mới người dùng",
+        "email":"Email",
+        "password": "Mật khẩu",
+        "firstname":"Tên",
+        "lastname":"Họ",
+        "gender":"Giới tính",
+        "phone-number": "Số điện thoại",
+        "position": "Chức danh",
+        "roleId": "Vai trò",
+        "address": "Địa chỉ",
+        "image": "Ảnh đại diện",
+        "save": " Lưu người dùng"
     }
     
 }
