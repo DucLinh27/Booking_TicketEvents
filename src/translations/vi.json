@@ -47,7 +47,16 @@
         "roleId": "Vai trò",
         "address": "Địa chỉ",
         "image": "Ảnh đại diện",
-        "save": " Lưu người dùng"
+        "save": " Lưu người dùng",
+        "edit": "Lưu thay đổi"
+    },
+    "homepage": {
+        "out-standing-doctor": "Bác sĩ nổi bật tuần qua",
+        "see-more": "Xem Thêm",
+        "popular-speciality": "Chuyên khoa phổ biến",
+        "handbook":"Cẩm nang",
+        "outstanding-medical-facility": "Cơ sở y tế nổi bật",
+        "about": "Truyền thông nói về BookingCare"
     }
     
 }

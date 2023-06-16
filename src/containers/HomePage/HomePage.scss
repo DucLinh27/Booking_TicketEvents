@@ -61,7 +61,7 @@
             background-image: url("../../assets/medical/healthcarepng.png");
           }
           &.section-outstanding-doctor {
-            background-image: url("../../assets/outstandingdoctor/bacsi.jpg");
+            // background-image: url("../../assets/outstandingdoctor/bacsi.jpg");
             width: 120px;
             height: 120px;
             border-radius: 50%;
@@ -131,6 +131,9 @@
   }
   
 }
+.slick-disabled{
+  display: none !important;
+}
 .section-about{
   padding: 0 175px;
   
@@ -153,4 +156,5 @@
 
   }
 }
+
 

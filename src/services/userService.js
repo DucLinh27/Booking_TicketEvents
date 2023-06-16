@@ -28,11 +28,23 @@ const editUserServices = (inputData) => {
 const getAlllCodeServices = (inputType) => {
   return axios.get(`/api/allcode?type=${inputType}`);
 }
+const getTopDoctorHomeService = (limit) => {
+  return axios.get(`/api/top-doctor-home?limit=${limit}`);
+}
+const getAllDoctors = (limit) => {
+  return axios.get(`/api/get-all-doctors`);
+}
+const saveDetailDoctorService = (data) => {
+  return axios.post("/api/save-infor-doctors", data);
+}
 export {
   handleLoginApi,
   getAllUsers,
   createNewUserServices,
   deleteUserServices,
   editUserServices,
-  getAlllCodeServices
+  getAlllCodeServices,
+  getTopDoctorHomeService,
+  getAllDoctors,
+  saveDetailDoctorService
 };
