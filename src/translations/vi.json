@@ -33,6 +33,9 @@
             "manage-clinic": "Phòng khám",
             "manage-specialty": "Chuyên khoa",
             "handbook": "Cẩm nang"
+        },
+        "doctor": {
+            "manage-schedule" : "Quản lý kế hoạch khám bệnh"
         }
     },
     "manage-user": {
@@ -57,6 +60,38 @@
         "handbook":"Cẩm nang",
         "outstanding-medical-facility": "Cơ sở y tế nổi bật",
         "about": "Truyền thông nói về BookingCare"
+    },
+    "manage-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
+        "choose-doctor": "Chọn bác sĩ",
+        "choose-date": "Chọn ngày",
+        "save": "Lưu thông tin"
+
+    },
+    "patient":{
+        "detail-doctor": {
+            "schedule": "Lịch khám",
+            "no-schedule": "Bác sĩ không có lịch hẹn trong thời gian này, vui lòng chọn thời gian khác!",
+            "choose":"Chọn",
+            "book-free" : "và đặt (miễn phí)"
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Tạo thông tin Doctors",
+            "select-doctor": "Chọn bác sĩ",
+            "intro": "Thông tin giới thiệu",
+            "add": "Tạo thông tin",
+            "save":"Lưu thông tin",
+            "price": "Giá khám bệnh",
+            "payment": "Phương thức thanh toán",
+            "province": "Tỉnh thành",
+            "nameClinic": "Tên phòng khám",
+            "addressClinic": "Địa chỉ phòng khám",
+            "note": "Ghi chú"
+            
+        }
     }
+    
     
 }

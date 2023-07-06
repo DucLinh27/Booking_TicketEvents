@@ -35,6 +35,9 @@
             "manage-clinic": "Manage Clinics",
             "manage-specialty": "Manage Specialty",
             "manage-handbook": "Manage Handbook"
+        },
+        "doctor": {
+            "manage-schedule" : "Manage Doctor Schedule"
         }
     },
     "manage-user": {
@@ -59,7 +62,37 @@
         "handbook":"Hand Book",
         "outstanding-medical-facility": "Outstanding Medical Facility",
         "about": "Media Talk about BookingCare"
+    },
+    "manage-schedule": {
+        "title": "Manage doctor's examination plan",
+        "choose-doctor": "Choose Doctor",
+        "choose-date": "Choose Date",
+        "save": "Save information"
+    },
+    "patient":{
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "no-schedule": "The doctor does not have an appointment during this time, please choose another time!",
+            "choose":"Choose",
+            "book-free" : "and book (free)"
+
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Create information Doctors",
+            "select-doctor": "Choose doctors",
+            "intro": "Introduction",
+            "add": "Create information",
+            "save":"Save information",
+            "price": "Price",
+            "payment": "Payment",
+            "province": "Province",
+            "nameClinic": "Clinic's name",
+            "addressClinic": "Clinic's address",
+            "note": "Note"
+            
+        }
     }
-    
     
 }

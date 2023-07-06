@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
-import { getAlllCodeServices } from "../../../services/userService";
+import { getAllCodeServices } from "../../../services/userService";
 import { LANGUAGES, CRUD_ACTIONS, CommonUtils } from "../../../utils";
 import * as actions from "../../../store/actions";
 import "./UserRedux.scss";
@@ -32,7 +32,6 @@ class UserRedux extends Component {
 
       action: "",
       userEditId: "",
-
     };
   }
   async componentDidMount() {
@@ -41,7 +40,7 @@ class UserRedux extends Component {
     this.props.getRoleStart();
 
     // try {
-    //   let res = await getAlllCodeServices( "gender");
+    //   let res = await getAllCodeServices( "gender");
     //   if (res && res.errCode === 0) {
     //     this.setState({
     //       genderArr: res.data,
@@ -96,7 +95,7 @@ class UserRedux extends Component {
         role: arrRoles && arrRoles.length > 0 ? arrRoles[0].keyMap : "",
         gender: arrGenders && arrGenders.length > 0 ? arrGenders[0].keyMap : "",
         avatar: "",
-        action: CRUD_ACTIONS.CREATE
+        action: CRUD_ACTIONS.CREATE,
       });
     }
   }
@@ -133,13 +132,13 @@ class UserRedux extends Component {
         gender: this.state.gender,
         roleId: this.state.role,
         positionId: this.state.position,
-        avatar: this.state.avatar
+        avatar: this.state.avatar,
       });
     }
-    if(action === CRUD_ACTIONS.EDIT){
+    if (action === CRUD_ACTIONS.EDIT) {
       //fire edit user
       this.props.editUserRedux({
-        id : this.state.userEditId,
+        id: this.state.userEditId,
         email: this.state.email,
         password: this.state.password,
         firstName: this.state.firstName,
@@ -149,7 +148,7 @@ class UserRedux extends Component {
         gender: this.state.gender,
         roleId: this.state.role,
         positionId: this.state.position,
-        avatar: this.state.avatar
+        avatar: this.state.avatar,
       });
     }
 
@@ -186,9 +185,9 @@ class UserRedux extends Component {
   };
 
   handleEditUserFromParent = (user) => {
-    let imageBase64 = '';
-    if(user.image){
-      imageBase64 = new Buffer(user.image, 'base64').toString('binary');
+    let imageBase64 = "";
+    if (user.image) {
+      imageBase64 = new Buffer(user.image, "base64").toString("binary");
     }
     this.setState({
       email: user.email,
@@ -204,7 +203,6 @@ class UserRedux extends Component {
       previewImageURL: imageBase64,
       action: CRUD_ACTIONS.EDIT,
       userEditId: user.id,
-
     });
   };
 
@@ -252,7 +250,9 @@ class UserRedux extends Component {
                   onChange={(event) => {
                     this.onChangeInput(event, "email");
                   }}
-                  disabled={this.state.action === CRUD_ACTIONS.EDIT ? true : false}
+                  disabled={
+                    this.state.action === CRUD_ACTIONS.EDIT ? true : false
+                  }
                 />
               </div>
               <div className="col-3">
@@ -266,8 +266,9 @@ class UserRedux extends Component {
                   onChange={(event) => {
                     this.onChangeInput(event, "password");
                   }}
-                  disabled={this.state.action === CRUD_ACTIONS.EDIT ? true : false}
-
+                  disabled={
+                    this.state.action === CRUD_ACTIONS.EDIT ? true : false
+                  }
                 />
               </div>
               <div className="col-3">
