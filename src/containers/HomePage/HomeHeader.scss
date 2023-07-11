@@ -4,7 +4,7 @@
   padding: 0 40px;
   position: fixed;
   background: white;
-  z-index: 1000;
+  z-index: 100;
 
   .home-header-content {
     width: 100%;
@@ -65,9 +65,8 @@
         }
         &.active {
           opacity: 1;
-
         }
-        &:hover{
+        &:hover {
           opacity: 0.8;
         }
       }
@@ -76,14 +75,13 @@
         cursor: pointer;
         opacity: 0.5;
 
-
         &.active {
           opacity: 1;
           span {
             color: blue;
           }
         }
-        &:hover{
+        &:hover {
           opacity: 0.8;
         }
       }

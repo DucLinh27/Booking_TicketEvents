@@ -1,16 +1,11 @@
 .section-share {
-  &.section-specialty{
+  &.section-specialty {
     background: #f5f5f5;
   }
-  &.section-about{
+  &.section-about {
     height: 500px !important;
     background: #f5f5f5;
-
-    
-
   }
-
-  
 }
 
 .section-share {
@@ -55,7 +50,7 @@
           background-repeat: no-repeat !important;
           background-size: cover;
           &.section-specialty {
-            background-image: url("../../assets/specialty/co-xuong-khop.jpg");
+            // background-image: url("../../assets/specialty/co-xuong-khop.jpg");
           }
           &.section-medical-facility {
             background-image: url("../../assets/medical/healthcarepng.png");
@@ -114,47 +109,42 @@
     justify-content: center;
     margin-bottom: 10px;
   }
-  .section-customize{
+  .section-customize {
     cursor: pointer;
     padding: 5px;
-    .customize-border{
+    .customize-border {
       border: 1px solid gray;
       padding: 20px;
     }
   }
 }
-.homeFooter{
+.homeFooter {
   text-align: center;
   padding-top: 8px;
-  a{
+  a {
     text-decoration: unset;
   }
-  
 }
-.slick-disabled{
+.slick-disabled {
   display: none !important;
 }
-.section-about{
+.section-about {
   padding: 0 175px;
-  
-  .section-about-header{
+
+  .section-about-header {
     padding: 20px 10px;
     font-size: 25px;
     font-weight: 700;
-
   }
-  .section-about-content{
+  .section-about-content {
     display: flex;
     gap: 15px;
     width: 100%;
-    .section-about-left{
+    .section-about-left {
       width: 49%;
     }
-    .section-about-right{
+    .section-about-right {
       width: 49%;
     }
-
   }
 }
-
-

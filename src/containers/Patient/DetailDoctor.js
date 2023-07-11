@@ -5,6 +5,7 @@ import "./DetailDoctor.scss";
 import { getDetailInforDoctor } from "../../services/userService";
 import { LANGUAGES } from "../../utils";
 import DoctorSchedule from "./Doctor/DoctorSchedule";
+import DoctorExtraInfor from "./Doctor/DoctorExtraInfor";
 
 class DetailDoctor extends Component {
   constructor(props) {
@@ -28,7 +29,6 @@ class DetailDoctor extends Component {
       if (res && res.errCode === 0) {
         this.setState({ detailDoctor: res.data });
       }
-      console.log("check res", res);
     }
   }
   componentDidUpdate(prevProps, prevState, snapshot) {
@@ -77,7 +77,11 @@ class DetailDoctor extends Component {
             <div className="content-left">
               <DoctorSchedule doctorIdFromParent={this.state.currentDoctorId} />
             </div>
-            <div className="content-right"></div>
+            <div className="content-right">
+              <DoctorExtraInfor
+                doctorIdFromParent={this.state.currentDoctorId}
+              />
+            </div>
           </div>
           <div className="detail-infor-doctor">
             {detailDoctor &&
