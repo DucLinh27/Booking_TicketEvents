@@ -169,6 +169,11 @@ class ManageDoctor extends Component {
       nameClinic: this.state.nameClinic,
       addressClinic: this.state.addressClinic,
       note: this.state.note,
+      clinicId:
+        this.state.selectedClinic && this.state.selectedClinic.value
+          ? this.state.selectedClinic.value
+          : "",
+      specialtyId: this.state.selectedSpecialty.value,
     });
   };
 
@@ -253,7 +258,6 @@ class ManageDoctor extends Component {
 
   render() {
     let { hashOldData, listSpecialty } = this.state;
-
     return (
       <div className="manage-doctor-container">
         <div className="manage-doctor-title">
@@ -366,17 +370,28 @@ class ManageDoctor extends Component {
               <FormattedMessage id="admin.manage-doctor.specialty" />
             </label>
             <Select
-              // value={this.state.selectedOption}
-              // onChange={this.handleChangeSelect}
+              value={this.state.selectedSpecialty}
+              onChange={this.handleChangeSelectDoctorInfor}
               options={this.state.listSpecialty}
               placeholder={
                 <FormattedMessage id="admin.manage-doctor.specialty" />
               }
+              name="selectedSpecialty"
             />
           </div>
           <div className="col-4 form-group">
-            <label>Chon phong kham</label>
-            <input className="form-control" />
+            <label>
+              <FormattedMessage id="admin.manage-doctor.select-clinic" />
+            </label>
+            <Select
+              value={this.state.selectedSpecialty}
+              onChange={this.handleChangeSelectDoctorInfor}
+              options={this.state.listSpecialty}
+              placeholder={
+                <FormattedMessage id="admin.manage-doctor.specialty" />
+              }
+              name="selectedSpecialty"
+            />
           </div>
         </div>
         <div className="manage-doctor-editor">

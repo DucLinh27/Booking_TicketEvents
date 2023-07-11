@@ -121,7 +121,7 @@ class ManageSchedule extends Component {
     });
 
     if (res && res.errCode === 0) {
-      toast.error("Save Informations Success");
+      toast.success("Save Informations Success");
     } else {
       toast.error("Error saveBulkScheduleDoctor");
       console.log("error saveBulkScheduleDoctor: ", res);

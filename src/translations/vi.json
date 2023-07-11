@@ -112,7 +112,8 @@
             "nameClinic": "Tên phòng khám",
             "addressClinic": "Địa chỉ phòng khám",
             "note": "Ghi chú",
-            "specialty": "Chọn chuyên khoa"
+            "specialty": "Chọn chuyên khoa",
+            "select-clinic": "Chọn phòng khám"
 
             
         }

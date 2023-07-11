@@ -113,7 +113,9 @@
             "nameClinic": "Clinic's name",
             "addressClinic": "Clinic's address",
             "note": "Note",
-            "specialty": "Choose a specialty"
+            "specialty": "Choose a specialty",
+            "select-clinic": "Choose a clinics"
+
             
         }
     }
