@@ -15,11 +15,11 @@ import "react-markdown-editor-lite/lib/index.css";
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 // Finish!
-function handleEditorChange({ html, text }) {
-  console.log("handleEditorChange", html, text);
-}
+// function handleEditorChange({ html, text }) {
+//   console.log("handleEditorChange", html, text);
+// }
 
-class TableManageUser extends Component { 
+class TableManageUser extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -51,9 +51,9 @@ class TableManageUser extends Component {
           <tbody>
             <tr>
               <th>Email</th>
-              <th>FisrtName</th>
-              <th>LastName</th>
-              <th>Address</th>
+              <th>PhoneNumber</th>
+              {/* <th>LastName</th>
+              <th>Address</th> */}
               <th>Actions</th>
             </tr>
             {arrUsers &&
@@ -62,9 +62,9 @@ class TableManageUser extends Component {
                 return (
                   <tr key={index}>
                     <td>{item.email}</td>
-                    <td>{item.firstName}</td>
-                    <td>{item.lastName}</td>
-                    <td>{item.address}</td>
+                    {/* <td>{item.firstName}</td>
+                    <td>{item.lastName}</td> */}
+                    <td>{item.phonenumber}</td>
                     <td>
                       <button
                         className="btn-edit"
@@ -85,11 +85,11 @@ class TableManageUser extends Component {
             ;
           </tbody>
         </table>
-        <MdEditor
+        {/* <MdEditor
           style={{ height: "500px" }}
           renderHTML={(text) => mdParser.render(text)}
           onChange={handleEditorChange}
-        />
+        /> */}
       </React.Fragment>
     );
   }

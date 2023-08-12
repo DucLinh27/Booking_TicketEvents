@@ -34,7 +34,7 @@ class ManagePatient extends Component {
     let { currentDate } = this.state;
     let formatedDate = new Date(currentDate).getTime();
     let res = await getAllPatientForDoctor({
-      doctorId: user.id,
+      partnerId: user.id,
       date: formatedDate,
     });
     if (res && res.errCode === 0) {
@@ -52,8 +52,8 @@ class ManagePatient extends Component {
   };
   handleBtnConfirm = (item) => {
     let data = {
-      doctorId: item.doctorId,
-      patientId: item.patientId,
+      partnerId: item.partnerId,
+      customerId: item.customerId,
       email: item.patientData.email,
       timeType: item.timeType,
       patientName: item.patientData.firstName,
@@ -78,8 +78,8 @@ class ManagePatient extends Component {
     let res = await postSendRemedy({
       email: dataChild.email,
       imgBase64: dataChild.imgBase64,
-      doctorId: dataModal.doctorId,
-      patientId: dataModal.patientId,
+      partnerId: dataModal.partnerId,
+      customerId: dataModal.customerId,
       timeType: dataModal.timeType,
       language: this.props.language,
       patientName: dataModal.patientName,

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import "./ManageClinic.scss";
+import "./ManageTicket.scss";
 import { FormattedMessage } from "react-intl";
 import MarkdownIt from "markdown-it";
 import MdEditor from "react-markdown-editor-lite";
@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
-class ManageClinic extends Component {
+class ManageTicket extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -131,4 +131,4 @@ const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ManageClinic);
+export default connect(mapStateToProps, mapDispatchToProps)(ManageTicket);

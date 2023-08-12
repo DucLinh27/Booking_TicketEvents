@@ -17,10 +17,10 @@ import ConfirmModal from "../components/ConfirmModal";
 import HomePage from "./HomePage/HomePage.js";
 import CustomScrollbars from "../components/CustomScrollbars";
 import Doctor from "../routes/Doctor";
-import DetailDoctor from "./Patient/DetailDoctor";
+import HomeLogin from "./Patient/HomeLogin";
 import VerifyEmail from "./Patient/VerifyEmail";
-import DetailSpecialty from "./Patient/Specialty/DetailSpecialty";
-import DetailClinic from "./Patient/Clinic/DetailClinic";
+import DetailEvents from "./Patient/Events/DetailEvents";
+import DetailClinic from "./Patient/Tickets/DetailTicket";
 
 class App extends Component {
   handlePersistorState = () => {
@@ -60,18 +60,15 @@ class App extends Component {
                     path={path.SYSTEM}
                     component={userIsAuthenticated(System)}
                   />
-                  <Route
+                  {/* <Route
                     path={"/doctor/"}
                     component={userIsAuthenticated(Doctor)}
-                  />
+                  /> */}
 
                   <Route path={path.HOMEPAGE} component={HomePage} />
-                  <Route path={path.DETAIL_DOCTOR} component={DetailDoctor} />
-                  <Route
-                    path={path.DETAIL_SPECIALTY}
-                    component={DetailSpecialty}
-                  />
-                  <Route path={path.DETAIL_CLINIC} component={DetailClinic} />
+                  {/* <Route path={path.HOME_LOGIN} component={HomeLogin} /> */}
+                  <Route path={path.DETAIL_EVENTS} component={DetailEvents} />
+                  <Route path={path.DETAIL_EVENTS} component={DetailClinic} />
 
                   <Route
                     path={path.VERIFY_EMAIL_BOOKING}

@@ -170,7 +170,7 @@ class ManageDoctor extends Component {
       contentHTML: this.state.contentHTML,
       contentMarkdown: this.state.contentMarkdown,
       description: this.state.description,
-      doctorId: this.state.selectedOption.value,
+      partnerId: this.state.selectedOption.value,
       action: hashOldData === true ? CRUD_ACTIONS.EDIT : CRUD_ACTIONS.CREATE,
 
       selectedPrice: this.state.selectedPrice.value,

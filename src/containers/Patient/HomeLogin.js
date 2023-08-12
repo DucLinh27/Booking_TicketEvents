@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import HomeHeader from "../HomePage/HomeHeader";
-import "./DetailDoctor.scss";
+import "./HomeLogin.scss";
 import { getDetailInforDoctor } from "../../services/userService";
 import { LANGUAGES } from "../../utils";
 import DoctorSchedule from "./Doctor/DoctorSchedule";
 import DoctorExtraInfor from "./Doctor/DoctorExtraInfor";
 
-class DetailDoctor extends Component {
+class HomeLogin extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -56,7 +56,7 @@ class DetailDoctor extends Component {
               className="content-left"
               style={{
                 backgroundImage: `url(${
-                  detailDoctor.image ? detailDoctor.image : " "
+                  detailDoctor.image ? detailDoctor.image : ""
                 })`,
               }}
             ></div>
@@ -79,7 +79,8 @@ class DetailDoctor extends Component {
             </div>
             <div className="content-right">
               <DoctorExtraInfor
-                doctorId FromParent={this.state.currentDoctorId}
+                doctorId
+                FromParent={this.state.currentDoctorId}
               />
             </div>
           </div>
@@ -94,7 +95,6 @@ class DetailDoctor extends Component {
                 ></div>
               )}
           </div>
-          <div className="comment-doctor"></div>
         </div>
       </>
     );
@@ -111,4 +111,4 @@ const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(DetailDoctor);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeLogin);

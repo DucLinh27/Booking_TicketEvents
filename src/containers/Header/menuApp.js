@@ -11,52 +11,38 @@ export const adminMenu = [
         name: "menu.admin.crudredux",
         link: "/system/user-redux",
       },
+    ],
+  },
+  {
+    //quản lý events
+    name: "menu.admin.manage-events",
+    menus: [
       {
-        name: "menu.admin.manage-doctor",
-        link: "/system/manage-doctor",
-        // subMenus: [
-        //     { name: 'menu.system.system-administrator.user-manage', link: '/system/user-manage' },
-        //     { name: 'menu.system.system-administrator.user-redux', link: '/system/user-redux' },
-        // ]
-      },
-      {
-        //quản lý ke haoch kham benh bac si
-
-        name: "menu.doctor.manage-schedule",
-        link: "/doctor/manage-schedule",
+        name: "menu.admin.manage-events",
+        link: "/system/manage-events",
       },
     ],
   },
   {
-    //quản lý phòng khám
-    name: "menu.admin.manage-clinic",
+    //quản lý ticket
+    name: "menu.admin.manage-ticket",
     menus: [
       {
-        name: "menu.admin.manage-clinic",
-        link: "/system/manage-clinic",
+        name: "menu.admin.manage-ticket",
+        link: "/system/manage-ticket",
       },
     ],
   },
-  {
-    //quản lý chuyên khoa
-    name: "menu.admin.manage-specialty",
-    menus: [
-      {
-        name: "menu.admin.manage-specialty",
-        link: "/system/manage-specialty",
-      },
-    ],
-  },
-  {
-    //quản lý Cẩm nang
-    name: "menu.admin.handbook",
-    menus: [
-      {
-        name: "menu.admin.handbook",
-        link: "/system/handbook",
-      },
-    ],
-  },
+  // {
+  //   //quản lý chuyên khoa
+  //   name: "menu.admin.manage-specialty",
+  //   menus: [
+  //     {
+  //       name: "menu.admin.manage-specialty",
+  //       link: "/system/manage-specialty",
+  //     },
+  //   ],
+  // },
 ];
 export const doctorMenu = [
   {

@@ -104,7 +104,7 @@ class ManageSchedule extends Component {
       if (selectedTime && selectedTime.length > 0) {
         selectedTime.map((schedule) => {
           let object = {};
-          object.doctorId = selectedDoctor.value; //value and lable
+          object.partnerId = selectedDoctor.value; //value and lable
           object.date = formatedDate;
           object.timeType = schedule.keyMap;
           result.push(object);
@@ -116,7 +116,7 @@ class ManageSchedule extends Component {
     }
     let res = await saveBulkScheduleDoctor({
       arrSchedule: result,
-      doctorId: selectedDoctor.value,
+      partnerId: selectedDoctor.value,
       formatedDate: formatedDate,
     });
 

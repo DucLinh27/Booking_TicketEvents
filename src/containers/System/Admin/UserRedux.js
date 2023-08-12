@@ -38,19 +38,6 @@ class UserRedux extends Component {
     this.props.getGenderStart();
     this.props.getPositionStart();
     this.props.getRoleStart();
-
-    // try {
-    //   let res = await getAllCodeServices( "gender");
-    //   if (res && res.errCode === 0) {
-    //     this.setState({
-    //       genderArr: res.data,
-    //       positionArr: res.data,
-    //       roleArr: res.data
-    //     });
-    //   }
-    // } catch (e) {
-    //   console.log(e);
-    // }
   }
   componentDidUpdate(prevProps, prevState, snapshot) {
     //render => didupdate
@@ -271,7 +258,7 @@ class UserRedux extends Component {
                   }
                 />
               </div>
-              <div className="col-3">
+              {/* <div className="col-3">
                 <label>
                   <FormattedMessage id="manage-user.firstname" />
                 </label>
@@ -296,7 +283,7 @@ class UserRedux extends Component {
                     this.onChangeInput(event, "lastName");
                   }}
                 />
-              </div>
+              </div> */}
 
               <div className="col-3">
                 <label>
@@ -311,7 +298,7 @@ class UserRedux extends Component {
                   }}
                 />
               </div>
-              <div className="col-9">
+              {/* <div className="col-9">
                 <label>
                   <FormattedMessage id="manage-user.address" />
                 </label>
@@ -373,7 +360,7 @@ class UserRedux extends Component {
                       );
                     })}
                 </select>
-              </div>
+              </div> */}
               <div className="col-3">
                 <label>
                   <FormattedMessage id="manage-user.roleId" />
@@ -398,7 +385,7 @@ class UserRedux extends Component {
                     })}
                 </select>
               </div>
-              <div className="col-3">
+              {/* <div className="col-3">
                 <label>
                   <FormattedMessage id="manage-user.image" />
                 </label>
@@ -421,7 +408,7 @@ class UserRedux extends Component {
                     onClick={() => this.openPreviewImage()}
                   ></div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-12 my-3">
                 <button
                   className={

@@ -1,27 +1,27 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import "./DetailClinic.scss";
+import "./DetailTicket.scss";
 import { FormattedMessage } from "react-intl";
 import HomeHeader from "../../HomePage/HomeHeader";
 import { withRouter } from "react-router";
-import DoctorSchedule from "../../Patient/Doctor/DoctorSchedule";
-import DoctorExtraInfor from "../../Patient/Doctor/DoctorExtraInfor";
+import DoctorSchedule from "../Doctor/DoctorSchedule";
+import DoctorExtraInfor from "../Doctor/DoctorExtraInfor";
 import {
   getAllCodeServices,
   getExtraInforDoctorById,
 } from "../../../services/userService";
 import ProfileDoctor from "../Doctor/ProfileDoctor";
 import { getAllDetailClinicById } from "../../../services/userService";
-import DetailDoctor from "../DetailDoctor";
+import DetailDoctor from "../HomeLogin";
 import _ from "lodash";
 import { LANGUAGES } from "../../../utils";
 
-class DetailClinic extends Component {
+class DetailTicket extends Component {
   constructor(props) {
     super(props);
     this.state = {
       arrDoctorId: [],
-      dataDetailClinic: {},
+      dataDetailEvents: {},
     };
   }
 
@@ -48,7 +48,7 @@ class DetailClinic extends Component {
           }
         }
         this.setState({
-          dataDetailClinic: res.data,
+          dataDetailEvents: res.data,
           arrDoctorId: arrDoctorId,
         });
       }
@@ -61,21 +61,21 @@ class DetailClinic extends Component {
   }
 
   render() {
-    let { arrDoctorId, dataDetailClinic } = this.state;
+    let { arrDoctorId, dataDetailEvents } = this.state;
     console.log("check state", this.state);
     let { language } = this.props.language;
 
     return (
       <>
         <HomeHeader />
-        <div className="detail-specialty-body">
+        {/* <div className="detail-specialty-body">
           <div className="specialty-description">
-            {dataDetailClinic && !_.isEmpty(dataDetailClinic) && (
+            {dataDetailEvents && !_.isEmpty(dataDetailEvents) && (
               <>
-                <div className="name">{dataDetailClinic.name}</div>
+                <div className="name">{dataDetailEvents.name}</div>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: dataDetailClinic.descriptionHTML,
+                    __html: dataDetailEvents.descriptionHTML,
                   }}
                 ></div>
               </>
@@ -109,7 +109,7 @@ class DetailClinic extends Component {
                 </div>
               );
             })}
-        </div>
+        </div> */}
       </>
     );
   }
@@ -125,4 +125,4 @@ const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(DetailClinic);
+export default connect(mapStateToProps, mapDispatchToProps)(DetailTicket);

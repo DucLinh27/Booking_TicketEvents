@@ -26,15 +26,15 @@
         "admin":{
             "manage-user": "Users",
             "manage-doctor": "Manage Doctors",
-            "manage-admin": "Manage Admin",
-            "crud": "CRUD user",
+            "manage-admin": "Manage Admins",
+            "crud": "Manage Users",
             "crudredux": "CRUD Redux",
             "clinic": "Clinics",
             "specialty": "Specialty",
             "handbook": "Handbook",
-            "manage-clinic": "Manage Clinics",
-            "manage-specialty": "Manage Specialty",
-            "manage-handbook": "Manage Handbook"
+            "manage-ticket": "Manage Tickets",
+            "manage-events": "Manage Events",
+            "manage-partner": "Manage Partners"
         },
         "doctor": {
             "manage-schedule" : "Manage Doctor's Schedule",

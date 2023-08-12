@@ -27,12 +27,12 @@
         "admin":{
             "manage-user": "Người dùng",
             "manage-doctor": "Quản lý bác sĩ",
-            "manage-admin": "Quản lý admin",
-            "crud": "CRUD User",
+            "manage-admin": "Quản lý admins",
+            "crud": "Quản lý người dùng",
             "crudredux": "CRUD Redux",
-            "manage-clinic": "Phòng khám",
-            "manage-specialty": "Chuyên khoa",
-            "handbook": "Cẩm nang"
+            "manage-ticket": "Quản lý đặt vé",
+            "manage-events": "Quản lý events",
+            "manage-partner": "Quản lý đối tác"
         },
         "doctor": {
             "manage-schedule" : "Quản lý kế hoạch khám bệnh",

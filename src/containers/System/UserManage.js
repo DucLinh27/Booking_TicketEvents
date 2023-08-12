@@ -88,8 +88,8 @@ class UserManage extends Component {
       if (res && res.errCode === 0) {
         this.setState({ isOpenModalEditUser: false });
         this.getAllUsersFromReact();
-      }else {
-        alert(res.errCode)
+      } else {
+        alert(res.errCode);
       }
     } catch (e) {
       console.log(e);
@@ -114,7 +114,7 @@ class UserManage extends Component {
           />
         )}
 
-        <div className="title text-center">Manage users with linh</div>
+        <div className="title text-center">Manage users TICKET BOX</div>
         <div className="mx-1 ">
           <button
             className="btn btn-primary px-3"
@@ -127,10 +127,9 @@ class UserManage extends Component {
           <table>
             <tbody>
               <tr>
-                <th>Emmail</th>
-                <th>FisrtName</th>
-                <th>LastName</th>
-                <th>Address</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Role</th>
                 <th>Actions</th>
               </tr>
 
@@ -139,9 +138,8 @@ class UserManage extends Component {
                   return (
                     <tr>
                       <td>{item.email}</td>
-                      <td>{item.firstName}</td>
-                      <td>{item.lastName}</td>
-                      <td>{item.address}</td>
+                      <td>{item.phonenumber}</td>
+                      <td>{item.roleId}</td>
                       <td>
                         <button
                           className="btn-edit"
